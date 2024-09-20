@@ -57,10 +57,10 @@ public final class DriveConstants {
         default -> 0.01;
       };
 
-  public static final int gyroID = 13;
+  public static final int gyroID = 0;
 
   // Turn to "" for no canbus name
-  public static final String canbus = "chassis";
+  public static final String canbus = "canivore";
 
   public static ModuleConfig[] moduleConfigs =
       switch (Constants.getRobot()) {
@@ -69,26 +69,26 @@ public final class DriveConstants {
               new ModuleConfig(
                   1,
                   2,
-                  9,
-                  Rotation2d.fromRotations(-0.383).plus(Rotation2d.fromDegrees(180)),
+                  1,
+                  Rotation2d.fromDegrees(91.1).plus(Rotation2d.fromDegrees(180)),
                   true),
               new ModuleConfig(
                   3,
                   4,
-                  10,
-                  Rotation2d.fromRotations(-0.251).plus(Rotation2d.fromDegrees(180)),
+                  2,
+                  Rotation2d.fromDegrees(-177.1).plus(Rotation2d.fromDegrees(180)),
                   true),
               new ModuleConfig(
                   5,
                   6,
-                  11,
-                  Rotation2d.fromRotations(-0.057).plus(Rotation2d.fromDegrees(180)),
+                  3,
+                  Rotation2d.fromDegrees(115.4).plus(Rotation2d.fromDegrees(180)),
                   true),
               new ModuleConfig(
                   7,
                   8,
-                  12,
-                  Rotation2d.fromRotations(-0.470).plus(Rotation2d.fromDegrees(180)),
+                  4,
+                  Rotation2d.fromDegrees(96.06).plus(Rotation2d.fromDegrees(180)),
                   true)
             };
         case SIMBOT -> {
